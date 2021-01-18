@@ -1,0 +1,39 @@
+searchBar {
+  display: inline-block;
+}
+
+input {
+  width: 1000px;
+  outline: none;
+  border-radius: 20px;
+  height: 80px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 100;
+  margin-bottom: 50px;
+  margin-top: 400px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  height: 80px;
+  border-radius: 20px;
+  padding: 0 30px;
+  color: white;
+  background-color: deepskyblue;
+  font-size: 25px;
+  margin-left: 10px;
+}
