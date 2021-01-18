@@ -10,7 +10,7 @@ export default class App extends Component {
     const handleInputDisplay = (e) => {
       const apiKey = "e5b167da4cd6935ce06b32d85105271b";
       fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=${apiKey}`
       )
         .then((res) => res.json())
         .then((data) => {
