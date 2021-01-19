@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Conditions from "./Conditions";
 
 export default class App extends Component {
   state = {
@@ -7,15 +8,23 @@ export default class App extends Component {
   };
 
   render() {
-    const handleInputDisplay = (e) => {
+    const handleInputDisplay = () => {
       const apiKey = "e5b167da4cd6935ce06b32d85105271b";
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&appid=${apiKey}`
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
+          this.setState({
+            weather: data,
+            cod: data.cod,
+          });
         });
+      reset();
+    };
+
+    const reset = () => {
+      document.querySelector("input").value = "";
     };
 
     return (
@@ -40,6 +49,7 @@ export default class App extends Component {
             <button onClick={handleInputDisplay}>SEARCH</button>
           </div>
         </div>
+        <Conditions data={this.state.weather} cod={this.state.cod} />
       </div>
     );
   }

@@ -1,25 +1,24 @@
-searchBar {
+.searchBar {
   display: inline-block;
 }
 
 input {
-  width: 1000px;
+  width: 450px;
   outline: none;
   border-radius: 20px;
-  height: 80px;
   padding: 10px 30px;
   border: none;
-  font-size: 25px;
 }
 
 h1 {
-  font-size: 100px;
+  color: black;
+  text-decoration: underline;
   font-weight: 100;
   margin-bottom: 50px;
-  margin-top: 400px;
 }
 
 .main-header {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,11 +28,23 @@ h1 {
 button {
   outline: none;
   border: none;
-  height: 80px;
+  height: 35px;
   border-radius: 20px;
-  padding: 0 30px;
+  padding: 0 20px;
   color: white;
   background-color: deepskyblue;
-  font-size: 25px;
   margin-left: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(57, 203, 252);
+}
+
+.card {
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.26);
+  width: 50%;
+  border-radius: 10px;
 }
