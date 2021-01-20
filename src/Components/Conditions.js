@@ -1,6 +1,10 @@
 import "./App.css";
+import React, { useEffect } from "react";
 
 export default function Conditions(props) {
+  useEffect(() => {
+    console.log("useEffect running...");
+  });
   return (
     <div>
       {props.cod === 200 ? (
@@ -11,7 +15,7 @@ export default function Conditions(props) {
             </strong>
           </p>
           <p>
-            It is currently {Math.floor(props.data.main.temp)}°c with
+            It is currently {Math.floor(props.data.main.temp)}°c with{"  "}
             {props.data.weather[0].description}
           </p>
         </div>

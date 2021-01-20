@@ -3,9 +3,12 @@ import "./App.css";
 import Conditions from "./Conditions";
 
 export default class App extends Component {
-  state = {
-    location: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      location: "",
+    };
+  }
 
   render() {
     const handleInputDisplay = () => {
