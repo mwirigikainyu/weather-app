@@ -7,8 +7,34 @@
 
 body {
   min-height: 100vh;
-  background: url("/src/images/landscape-3639879_1920.jpg") no-repeat center;
+  background: url("/src/images/clouds.jpg") no-repeat center;
   background-size: cover;
   color: white;
   position: relative;
+  overflow: hidden;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.37);
+  font-size: x-large;
+  padding-bottom: 10px;
+}
+
+button {
+  outline: none;
+  border: none;
+  height: 35px;
+  border-radius: 20px;
+  padding: 0 20px;
+  color: white;
+  background-color: deepskyblue;
+  margin-left: 10px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(57, 203, 252);
 }
