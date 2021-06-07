@@ -1,1 +1,1 @@
-Simple Weather App Demo
+Simple Responsive React Weather App Demo

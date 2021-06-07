@@ -6,37 +6,25 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  background-image: url("/src/assets/background.jpg");
+  align-items: center;
   min-height: 100vh;
-  background: url("/src/images/clouds.jpg") no-repeat center;
   background-size: cover;
-  color: white;
   position: relative;
   overflow: hidden;
 }
 
-input {
-  outline: none;
-  width: 100%;
-  background-color: transparent;
-  border-style: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.37);
-  font-size: x-large;
-  padding-bottom: 10px;
+footer {
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+  margin-top: 100px;
 }
 
-button {
-  outline: none;
-  border: none;
-  height: 35px;
-  border-radius: 20px;
-  padding: 0 20px;
-  color: white;
-  background-color: deepskyblue;
-  margin-left: 10px;
+@media only screen and (max-width: 600px) {
+  body {
+    color: red;
+  }
 }
-button:hover {
-  cursor: pointer;
-  background-color: rgb(57, 203, 252);
-}
-
-@media (min-he)
